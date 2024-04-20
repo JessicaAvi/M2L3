@@ -1,11 +1,27 @@
+@keyframes color-change {
+    0% {
+      color: blue;
+    }
+  
+    50% {
+      color: red;
+    }
+  
+    100% {
+      color: blue;
+    }
+}
+
 body {
-    font-family: Arial,  sans-serif; /* keluarga font */
+    font-family: Inter; /* keluarga font */
     font-size: 11px; /* Ukuran font utama pada tag <p></p> */
-    background-color: #f0f0f0; /* Warna latar belakang laman web */
-    color: #333333; /* Warna teks */ 
+    background-color: #FFFFFF; /* Warna latar belakang laman web */
+    color: #D6FF6B  ; /* Warna teks */ 
 }
 h1 {
-    color: #e2815b; /* Warna tajuk (header)*/
+    color: #5988FF; /* Warna tajuk (header)*/
     font-size: 30px; /* Ukuran font tajuk (header) */
-    font-family: Georgia, serif; /* Keluarga font yang digunakan di tajuk (header) */
+    font-family: Inter; /* Keluarga font yang digunakan di tajuk (header) */
 }
+
+h1:hover { animation: color-change 3s infinite; }
